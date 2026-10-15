@@ -54,11 +54,12 @@ const projects = [
 ];
 
 const skills = [
-  { name: "Next.js / React", level: "90%" },
+  { name: "Next.js / React", level: "70%" },
   { name: "PHP / Backend Systems", level: "88%" },
   { name: "VB.NET / Desktop Systems", level: "92%" },
-  { name: "MySQL / SQL Server", level: "90%" },
-  { name: "Cybersecurity / ICT", level: "88%" },
+  { name: "MySQL / SQL Server", level: "80%" },
+  { name: "Cybersecurity / ICT", level: "78%" },
+  { name: "Technical Support", level: "90%" },
 ];
 
 export default function Home() {
@@ -68,9 +69,12 @@ export default function Home() {
       {/* NAVBAR */}
       <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-[#07111f]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
-          <a href="#" className="text-xl font-black tracking-tight">
-            RANDOLFH<span className="text-cyan-400">.</span>
-          </a>
+          <div className="flex items-center gap-3">
+            <img src="/images/RS logo.png" alt="Logo" className="h-10 w-13 rounded-full" />
+            <a href="#" className="text-xl font-black tracking-tight">
+              RAN<span className="text-cyan-400">DOLFH.</span>
+            </a>
+          </div>
 
           <div className="hidden items-center gap-8 text-sm text-slate-400 md:flex">
             <a href="#about" className="transition hover:text-cyan-400">About</a>
@@ -202,7 +206,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="absolute -bottom-5 -left-5 rounded-xl border border-cyan-400/30 bg-[#0c1a2b] px-5 py-4 shadow-xl">
+            <div className="absolute -top-15 -right-5 rounded-xl border border-cyan-400/30 bg-[#0c1a2b] px-5 py-4 shadow-xl">
               <div className="flex items-center gap-3">
                 <div className="rounded-lg bg-cyan-400/10 p-2 text-cyan-400">
                   <ShieldCheck size={20} />
