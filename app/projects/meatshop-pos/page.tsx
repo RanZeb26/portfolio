@@ -65,7 +65,7 @@ export default function MeatShopProjectPage() {
       {/* Project Hero */}
       <section className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
         <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-cyan-400">
-          Python POS System / Featured Project
+          Global SDG Digital Dashboard / Featured Project
         </p>
 
         <h1 className="max-w-4xl text-4xl font-black tracking-tight sm:text-6xl lg:text-7xl">
@@ -75,13 +75,13 @@ export default function MeatShopProjectPage() {
         </h1>
 
         <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-400">
-          A Python-powered point-of-sale and inventory management application
-          designed to support meat shop operations, product pricing, sales
-          transactions, and stock monitoring.
+          A global platform for monitoring Sustainable Development Goal 
+          progress through interactive maps, rankings, regional analytics, 
+          and data visualization.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          {["Python", "Tkinter", "SQLite", "POS"].map((tech) => (
+          {["Next.js", "Node.js", "MySQL", "Tailwind CSS"].map((tech) => (
             <span
               key={tech}
               className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-sm text-cyan-300"
@@ -95,7 +95,7 @@ export default function MeatShopProjectPage() {
         <div className="mt-12 overflow-hidden rounded-2xl border border-white/10 bg-[#0c1a2b] p-2">
           <img
             src="/images/Dashboard_Full.jpg"
-            alt="Meat Shop POS and Inventory application screenshot"
+            alt="Global SDG Digital Dashboard application screenshot"
             className="max-h-[650px] w-full rounded-xl object-contain"
           />
         </div>
@@ -113,13 +113,11 @@ export default function MeatShopProjectPage() {
 
           <div className="space-y-5 leading-8 text-slate-400">
             <p>
-              The Meat Shop POS & Inventory System is a desktop software
-              project focused on simplifying common meat shop operations.
-              It brings product management, pricing, sales, and inventory
-              workflows into one application.
+              The Global SDG Digital Dashboard is a web-based platform for monitoring Sustainable Development Goal 
+              progress. It provides interactive maps, rankings, regional analytics, and data visualization tools.
             </p>
             <p>
-              The interface is developed with Python and Tkinter, with SQLite
+              The interface is developed with Next.js and Node.js, with MySQL
               listed as the database technology for this portfolio entry.
               The actual implemented features can be documented and expanded
               to match your application.
@@ -171,9 +169,9 @@ export default function MeatShopProjectPage() {
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
-              ["Python", "Application logic"],
-              ["Tkinter", "Desktop user interface"],
-              ["SQLite", "Local database"],
+              ["Next.js", "Frontend framework"],
+              ["Node.js", "Backend runtime"],
+              ["MySQL", "Database management"],
             ].map(([name, description]) => (
               <div
                 key={name}
@@ -198,7 +196,7 @@ export default function MeatShopProjectPage() {
         </p>
 
         <a
-          href="mailto:randolfhsantos@gmail.com?subject=Meat%20Shop%20POS%20Project%20Inquiry"
+          href="mailto:randolfhsantos@gmail.com?subject=Global%20SDG%20Digital%20Dashboard%20Project%20Inquiry"
           className="mt-8 inline-flex items-center gap-3 rounded-full bg-cyan-400 px-7 py-4 font-bold text-[#07111f] transition hover:bg-cyan-300"
         >
           Contact Me
