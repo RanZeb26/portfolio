@@ -69,9 +69,9 @@ export default function MeatShopProjectPage() {
         </p>
 
         <h1 className="max-w-4xl text-4xl font-black tracking-tight sm:text-6xl lg:text-7xl">
-          Meat Shop POS
+          Global SDG 
           <br />
-          <span className="text-cyan-400">& Inventory</span>
+          <span className="text-cyan-400">Digital Dashboard</span>
         </h1>
 
         <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-400">
