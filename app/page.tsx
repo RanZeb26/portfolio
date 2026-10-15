@@ -489,7 +489,7 @@ export default function Home() {
           </p>
 
           <a
-            href="mailto:your@email.com"
+            href="mailto:randolfhsantos@gmail.com"
             className="mt-10 inline-flex items-center gap-3 rounded-full bg-cyan-400 px-8 py-4 text-sm font-black uppercase tracking-wider text-[#07111f] transition hover:bg-cyan-300"
           >
             Start a Conversation

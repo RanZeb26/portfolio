@@ -49,7 +49,7 @@ export default function MeatShopProjectPage() {
       <nav className="border-b border-white/10">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <Link href="/" className="text-xl font-black">
-            RANDOLFH<span className="text-cyan-400">.</span>
+            RAN<span className="text-cyan-400">DOLFH.</span>
           </Link>
 
           <Link
