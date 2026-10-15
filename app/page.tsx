@@ -13,7 +13,7 @@ import {
   Terminal,
   ChevronDown,
 } from "lucide-react";
-
+import Link from "next/link";
 const projects = [
   {
     number: "01",
@@ -23,6 +23,7 @@ const projects = [
       "A global platform for monitoring Sustainable Development Goal progress through interactive maps, rankings, regional analytics, and data visualization.",
     tech: ["Next.js", "Node.js", "MySQL", "Tailwind"],
     accent: "cyan",
+    image: "/images/Dashboard.png",
   },
   {
     number: "02",
@@ -316,56 +317,61 @@ export default function Home() {
                 <br />
                 <span className="text-slate-500">BUILT.</span>
               </h2>
-            </div>
 
-            <p className="max-w-sm text-sm leading-7 text-slate-500">
+            </div>
+                          <p className="max-w-sm text-sm leading-7 text-slate-500">
               A selection of platforms and applications developed to solve
               business, organizational, and operational challenges.
             </p>
+
           </div>
 
           <div className="grid gap-5 md:grid-cols-2">
             {projects.map((project) => (
-              <div
-                key={project.number}
-                className="group relative overflow-hidden rounded-2xl border border-white/10 bg-[#0c1a2b] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/40"
-              >
-                <div className="flex items-start justify-between">
-                  <span className="font-mono text-sm text-cyan-400">
-                    / {project.number}
-                  </span>
+              <Link key={project.number}
+              href="/projects/meatshop-pos" className="group relative block overflow-hidden rounded-2xl border border-white/10 bg-[#0c1a2b] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/40">
+  {/* Project Image */}
+  {project.image && (
+    <div className="mb-6 overflow-hidden rounded-xl border border-white/10">
+      <img
+        src={project.image}
+        alt={project.title}
+        className="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
+      />
+    </div>
+  )}
 
-                  <ArrowUpRight
-                    size={22}
-                    className="text-slate-600 transition group-hover:text-cyan-400"
-                  />
-                </div>
+  <p className="text-xs font-bold tracking-widest text-cyan-400">
+    {project.category}
+  </p>
 
-                <p className="mt-12 text-[10px] font-bold tracking-[0.25em] text-slate-500">
-                  {project.category}
-                </p>
+  <h3 className="mt-3 text-2xl font-black text-white">
+    {project.title}
+  </h3>
 
-                <h3 className="mt-3 text-2xl font-black tracking-tight text-white">
-                  {project.title}
-                </h3>
+  <p className="mt-4 text-sm leading-7 text-slate-400">
+    {project.description}
+  </p>
 
-                <p className="mt-5 min-h-[80px] text-sm leading-7 text-slate-400">
-                  {project.description}
-                </p>
+  <div className="mt-6 flex flex-wrap gap-2">
+    {project.tech.map((tech) => (
+      <span
+        key={tech}
+        className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-400"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
 
-                <div className="mt-8 flex flex-wrap gap-2">
-                  {project.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="rounded-full border border-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-400"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="absolute -bottom-20 -right-20 h-48 w-48 rounded-full bg-cyan-400/5 blur-3xl transition group-hover:bg-cyan-400/10" />
-              </div>
+  <div className="mt-8 flex items-center gap-2 text-sm font-bold text-cyan-400">
+    View Project Details
+    <ArrowUpRight
+      size={18}
+      className="transition group-hover:translate-x-1 group-hover:-translate-y-1"
+    />
+  </div>
+</Link>
             ))}
           </div>
         </div>
