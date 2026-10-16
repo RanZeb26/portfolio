@@ -34,6 +34,7 @@ const projects = [
     tech: ["PHP", "MySQL", "Bootstrap", "AJAX"],
     accent: "blue",
     image: "/images/Inventory.png",
+    slug: "business-inventory"
   },
   {
     number: "03",
@@ -331,7 +332,8 @@ export default function Home() {
           <div className="grid gap-5 md:grid-cols-2">
             {projects.map((project) => (
               <Link key={project.number}
-              href="/projects/meatshop-pos" className="group relative block overflow-hidden rounded-2xl border border-white/10 bg-[#0c1a2b] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/40">
+              href={`/projects/${project.slug}`}
+               className="group relative block overflow-hidden rounded-2xl border border-white/10 bg-[#0c1a2b] p-7 transition duration-500 hover:-translate-y-1 hover:border-cyan-400/40">
   {/* Project Image */}
   {project.image && (
     <div className="mb-6 overflow-hidden rounded-xl border border-white/10">
