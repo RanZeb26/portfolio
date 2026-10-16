@@ -24,6 +24,7 @@ const projects = [
     tech: ["Next.js", "Node.js", "MySQL", "Tailwind"],
     accent: "cyan",
     image: "/images/Dashboard.png",
+        slug: "meatshop-pos",
   },
   {
     number: "02",
@@ -34,7 +35,7 @@ const projects = [
     tech: ["PHP", "MySQL", "Bootstrap", "AJAX"],
     accent: "blue",
     image: "/images/Inventory.png",
-    slug: "business-inventory"
+    slug: "Inventory",
   },
   {
     number: "03",

@@ -65,13 +65,13 @@ export default function MeatShopProjectPage() {
       {/* Project Hero */}
       <section className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
         <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-cyan-400">
-          Business Inventory & Accounting
+          BUSINESS MANAGEMENT SYSTEM
         </p>
 
         <h1 className="max-w-4xl text-4xl font-black tracking-tight sm:text-6xl lg:text-7xl">
-          Global SDG 
+          Business 
           <br />
-          <span className="text-cyan-400">Digital Dashboard</span>
+          <span className="text-cyan-400">Inventory & Accounting</span>
         </h1>
 
         <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-400">
@@ -94,8 +94,8 @@ export default function MeatShopProjectPage() {
         {/* Project Screenshot */}
         <div className="mt-12 overflow-hidden rounded-2xl border border-white/10 bg-[#0c1a2b] p-2">
           <img
-            src="/images/Dashboard_Full.jpg"
-            alt="Global SDG Digital Dashboard application screenshot"
+            src="/images/Inventory.png"
+            alt="Business Inventory & Accounting application screenshot"
             className="max-h-[650px] w-full rounded-xl object-contain"
           />
         </div>
