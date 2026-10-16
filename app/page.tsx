@@ -33,6 +33,7 @@ const projects = [
       "Integrated inventory, purchasing, sales, invoicing, delivery, and accounting platform designed for real-world business operations.",
     tech: ["PHP", "MySQL", "Bootstrap", "AJAX"],
     accent: "blue",
+    image: "/images/Inventory.png",
   },
   {
     number: "03",
@@ -42,6 +43,7 @@ const projects = [
       "Employee scheduling, attendance processing, biometric log integration, overtime, deductions, and payroll preparation system.",
     tech: ["VB.NET", "SQL Server", "ZKTeco"],
     accent: "purple",
+    image: "/images/HR.png",
   },
   {
     number: "04",
