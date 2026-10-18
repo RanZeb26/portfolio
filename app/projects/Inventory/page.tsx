@@ -1,48 +1,58 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Code2, Database, ShoppingCart, Package, Scale, BarChart3 } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowUpRight,
+  Package,
+  ShoppingCart,
+  FileText,
+  Truck,
+  BarChart3,
+  Calculator,
+  Database,
+} from "lucide-react";
 
-export default function MeatShopProjectPage() {
-  const features = [
-    {
-      icon: Package,
-      title: "Product Management",
-      description:
-        "Manage meat products, product details, prices, and available inventory.",
-    },
-    {
-      icon: Scale,
-      title: "Weighing & Pricing",
-      description:
-        "Calculate product prices based on weight and the configured price per unit.",
-    },
-    {
-      icon: ShoppingCart,
-      title: "Point of Sale",
-      description:
-        "Process customer purchases and organize daily sales transactions.",
-    },
-    {
-      icon: Database,
-      title: "Inventory Tracking",
-      description:
-        "Maintain product stock records and track inventory changes.",
-    },
-    {
-      icon: BarChart3,
-      title: "Sales Monitoring",
-      description:
-        "Support daily business monitoring with organized transaction records.",
-    },
-    {
-      icon: Code2,
-      title: "Desktop Application",
-      description:
-        "A desktop-based application built with Python and Tkinter.",
-    },
-  ];
+const features = [
+  {
+    icon: Package,
+    title: "Product & Inventory Management",
+    description:
+      "Manage product information, categories, brands, SKUs, barcodes, selling prices, and stock levels.",
+  },
+  {
+    icon: ShoppingCart,
+    title: "Sales Management",
+    description:
+      "Organize sales transactions, customer records, invoice details, and sales items.",
+  },
+  {
+    icon: FileText,
+    title: "Invoice Management",
+    description:
+      "Create, review, and print invoices with customer details, itemized purchases, and VAT calculations.",
+  },
+  {
+    icon: Truck,
+    title: "Purchasing & Delivery",
+    description:
+      "Maintain purchasing records and organize delivery-related business workflows.",
+  },
+  {
+    icon: Calculator,
+    title: "Accounting",
+    description:
+      "Organize accounts, revenue, expenses, assets, liabilities, and equity for financial tracking.",
+  },
+  {
+    icon: BarChart3,
+    title: "Reports & Analytics",
+    description:
+      "Present business information in organized tables and reports to support operational decisions.",
+  },
+];
 
+export default function BusinessInventoryPage() {
   return (
     <main className="min-h-screen bg-[#07111f] text-white">
       {/* Navigation */}
@@ -62,40 +72,43 @@ export default function MeatShopProjectPage() {
         </div>
       </nav>
 
-      {/* Project Hero */}
+      {/* Hero */}
       <section className="mx-auto max-w-7xl px-6 py-16 lg:py-24">
         <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-cyan-400">
-          BUSINESS MANAGEMENT SYSTEM
+          Business Management / Featured Project
         </p>
 
         <h1 className="max-w-4xl text-4xl font-black tracking-tight sm:text-6xl lg:text-7xl">
-          Business 
+          Business Inventory
           <br />
-          <span className="text-cyan-400">Inventory & Accounting</span>
+          <span className="text-cyan-400">& Accounting System</span>
         </h1>
 
-        <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-400">
-          A global platform for monitoring Sustainable Development Goal 
-          progress through interactive maps, rankings, regional analytics, 
-          and data visualization.
+        <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+          An integrated business management application built to organize
+          products, inventory, purchasing, sales, invoices, deliveries, and
+          accounting records in one platform.
         </p>
 
+        {/* Technologies */}
         <div className="mt-8 flex flex-wrap gap-3">
-          {["Next.js", "Node.js", "MySQL", "Tailwind CSS"].map((tech) => (
-            <span
-              key={tech}
-              className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-sm text-cyan-300"
-            >
-              {tech}
-            </span>
-          ))}
+          {["PHP", "PDO", "MySQL", "Bootstrap", "JavaScript", "AJAX"].map(
+            (tech) => (
+              <span
+                key={tech}
+                className="rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-sm text-cyan-300"
+              >
+                {tech}
+              </span>
+            )
+          )}
         </div>
 
-        {/* Project Screenshot */}
+        {/* Main screenshot */}
         <div className="mt-12 overflow-hidden rounded-2xl border border-white/10 bg-[#0c1a2b] p-2">
           <img
             src="/images/Inventory.png"
-            alt="Business Inventory & Accounting application screenshot"
+            alt="Business Inventory and Accounting System dashboard"
             className="max-h-[650px] w-full rounded-xl object-contain"
           />
         </div>
@@ -103,24 +116,29 @@ export default function MeatShopProjectPage() {
 
       {/* Overview */}
       <section className="border-y border-white/10 bg-[#0a1727]">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-2">
           <div>
             <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-cyan-400">
               Project Overview
             </p>
-            <h2 className="text-3xl font-black">About the System</h2>
+
+            <h2 className="text-3xl font-black">
+              About the System
+            </h2>
           </div>
 
           <div className="space-y-5 leading-8 text-slate-400">
             <p>
-              The Global SDG Digital Dashboard is a web-based platform for monitoring Sustainable Development Goal 
-              progress. It provides interactive maps, rankings, regional analytics, and data visualization tools.
+              This web-based application brings together essential business
+              workflows, helping users manage products, monitor inventory,
+              process sales, maintain purchasing records, and prepare invoices.
             </p>
+
             <p>
-              The interface is developed with Next.js and Node.js, with MySQL
-              listed as the database technology for this portfolio entry.
-              The actual implemented features can be documented and expanded
-              to match your application.
+              The accounting component organizes financial information,
+              including a Chart of Accounts and revenue and expense records.
+              The system uses PHP with PDO for database operations and MySQL
+              for data storage.
             </p>
           </div>
         </div>
@@ -147,7 +165,9 @@ export default function MeatShopProjectPage() {
               >
                 <Icon size={28} className="mb-6 text-cyan-400" />
 
-                <h3 className="text-lg font-bold">{feature.title}</h3>
+                <h3 className="text-lg font-bold">
+                  {feature.title}
+                </h3>
 
                 <p className="mt-3 text-sm leading-7 text-slate-400">
                   {feature.description}
@@ -158,27 +178,32 @@ export default function MeatShopProjectPage() {
         </div>
       </section>
 
-      {/* Technology */}
+      {/* Technology stack */}
       <section className="border-y border-white/10 bg-[#0a1727]">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-cyan-400">
             Development Stack
           </p>
 
-          <h2 className="text-3xl font-black">Technologies Used</h2>
+          <h2 className="text-3xl font-black">
+            Technologies Used
+          </h2>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              ["Next.js", "Frontend framework"],
-              ["Node.js", "Backend runtime"],
-              ["MySQL", "Database management"],
+              ["PHP", "Server-side application logic"],
+              ["PDO", "Database connectivity"],
+              ["MySQL", "Relational database"],
+              ["Bootstrap", "Responsive user interface"],
             ].map(([name, description]) => (
               <div
                 key={name}
                 className="rounded-xl border border-white/10 p-5"
               >
-                <h3 className="font-bold text-white">{name}</h3>
-                <p className="mt-2 text-sm text-slate-500">{description}</p>
+                <h3 className="font-bold">{name}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-500">
+                  {description}
+                </p>
               </div>
             ))}
           </div>
@@ -188,30 +213,29 @@ export default function MeatShopProjectPage() {
       {/* Contact */}
       <section className="mx-auto max-w-4xl px-6 py-20 text-center">
         <h2 className="text-3xl font-black sm:text-4xl">
-          Have a project in mind?
+          Let's Build Something Useful
         </h2>
 
-        <p className="mt-4 text-slate-400">
-          Let's discuss how software can improve your business operations.
+        <p className="mt-4 leading-7 text-slate-400">
+          Interested in business automation, inventory management, or custom
+          software development? Let's talk.
         </p>
 
         <a
-          href="mailto:randolfhsantos@gmail.com?subject=Global%20SDG%20Digital%20Dashboard%20Project%20Inquiry"
+          href="mailto:randolfhsantos@gmail.com?subject=Business%20System%20Inquiry"
           className="mt-8 inline-flex items-center gap-3 rounded-full bg-cyan-400 px-7 py-4 font-bold text-[#07111f] transition hover:bg-cyan-300"
         >
           Contact Me
           <ArrowUpRight size={18} />
         </a>
 
-        <div className="mt-12">
+        <div className="mt-10">
           <Link
             href="/#projects"
-            className="text-sm text-slate-500 transition hover:text-cyan-400"
+            className="inline-flex items-center gap-2 text-sm text-slate-500 transition hover:text-cyan-400"
           >
-            <span className="inline-flex items-center gap-2">
-              <ArrowLeft size={16} />
-              Back to all projects
-            </span>
+            <ArrowLeft size={16} />
+            Back to all projects
           </Link>
         </div>
       </section>
