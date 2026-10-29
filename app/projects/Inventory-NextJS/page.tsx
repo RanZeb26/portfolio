@@ -85,7 +85,7 @@ export default function BusinessInventoryPage() {
         </h1>
 
         <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-400">
-          An integrated business management application built to organize
+          A Next.js integrated business management application built to organize
           products, inventory, purchasing, sales, invoices, returns, and
           accounting records in one platform.
         </p>

@@ -50,10 +50,10 @@ const projects = [
   {
     number: "04",
     title: "Inventory-NextJS",
-    category: "MOBILE SERVICE PLATFORM",
+    category: "BUSINESS MANAGEMENT SYSTEM",
     description:
-      "On-demand repair booking application concept connecting customers with technicians through location-based services.",
-    tech: ["Ionic React", "Capacitor", "Mapbox"],
+      "A Next.js integrated inventory, purchasing, sales, invoicing, delivery, and accounting platform designed for real-world business operations.",
+    tech: ["HTML5", "CSS3", "MySQL", "TypeScript", "JavaScript", "Next.js"],
     accent: "orange",
     image: "/images/Inventory-NextJS.png",
     slug: "Inventory-NextJS",
