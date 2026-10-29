@@ -32,7 +32,7 @@ const projects = [
     category: "BUSINESS MANAGEMENT SYSTEM",
     description:
       "Integrated inventory, purchasing, sales, invoicing, delivery, and accounting platform designed for real-world business operations.",
-    tech: ["PHP", "MySQL", "Bootstrap", "AJAX"],
+    tech: ["HTML5", "CSS3", "MySQL", "TypeScript", "JavaScript", "Next.js"],
     accent: "blue",
     image: "/images/Inventory.png",
     slug: "Inventory",
@@ -49,12 +49,14 @@ const projects = [
   },
   {
     number: "04",
-    title: "FixXpress",
+    title: "Inventory-NextJS",
     category: "MOBILE SERVICE PLATFORM",
     description:
       "On-demand repair booking application concept connecting customers with technicians through location-based services.",
     tech: ["Ionic React", "Capacitor", "Mapbox"],
     accent: "orange",
+    image: "/images/Inventory-NextJS.png",
+    slug: "Inventory-NextJS",
   },
 ];
 
