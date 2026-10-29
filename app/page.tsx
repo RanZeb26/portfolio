@@ -45,7 +45,7 @@ const projects = [
       "Employee scheduling, attendance processing, biometric log integration, overtime, deductions, and payroll preparation system.",
     tech: ["VB.NET", "SQL Server", "ZKTeco"],
     accent: "purple",
-    image: "/images/HR.png",
+    image: "/images/HR-Payroll.png",
   },
   {
     number: "04",
