@@ -39,7 +39,7 @@ const projects = [
   },
   {
     number: "03",
-    title: "HR & Payroll Management",
+    title: "HR & Payroll Management in Progress",
     category: "ENTERPRISE SYSTEM",
     description:
       "Employee scheduling, attendance processing, biometric log integration, overtime, deductions, and payroll preparation system.",
